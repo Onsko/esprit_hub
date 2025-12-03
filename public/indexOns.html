@@ -43,7 +43,7 @@
 <nav class="w-full bg-[#8E1616] mt-6 relative z-10">
   <ul class="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-12 font-outfit font-extralight text-[16px] sm:text-[18px] md:text-[22px] text-[#E2E6CD]">
     <li>
-      <a href="#" class="inline-block hover:opacity-80 transform transition duration-300 hover:scale-105">
+      <a href="indexOns.html" class="inline-block hover:opacity-80 transform transition duration-300 hover:scale-105">
         HOME
       </a>
     </li>
@@ -53,7 +53,7 @@
       </a>
     </li>
     <li>
-      <a href="#" class="inline-block hover:opacity-80 transform transition duration-300 hover:scale-105">
+      <a href="sallesrecommendees.html" class="inline-block hover:opacity-80 transform transition duration-300 hover:scale-105">
         SALLES
       </a>
     </li>
@@ -119,9 +119,9 @@
         <p class="font-outfit font-medium text-[17px] text-black mt-6 mb-6 text-center">
           Trouvez instantanément vos cours, TD et sujets d'examen dans un seul espace.
         </p>
-        <button class="font-outfit font-normal text-[17px] bg-[#E8C999] rounded-[83px] px-6 py-3 mt-auto">
+        <a href="ressources.html" class="font-outfit font-normal text-[17px] bg-[#E8C999] rounded-[83px] px-6 py-3 mt-auto inline-block text-center">
           ACCÉDER AUX COURS
-        </button>
+        </a>
       </div>
 
       <!-- Carte 2 -->
@@ -130,9 +130,9 @@
         <p class="font-outfit font-medium text-[17px] text-black mt-6 mb-6 text-center">
           Localisez et réservez les salles libres ou le matériel info/vidéo en temps réel.
         </p>
-        <button class="font-outfit font-normal text-[17px] bg-[#E8C999] rounded-[83px] px-6 py-3 mt-auto">
+        <a href="reservationExpressOns.html" class="font-outfit font-normal text-[17px] bg-[#E8C999] rounded-[83px] px-6 py-3 mt-auto inline-block text-center">
           RÉSERVER UNE SALLE
-        </button>
+        </a>
       </div>
 
       <!-- Carte 3 -->
@@ -141,7 +141,7 @@
         <p class="font-outfit font-medium text-[17px] text-black mt-6 mb-6 text-center">
           Ne manquez plus aucune deadline, événement de club ou opportunité d'emploi.
         </p>
-        <button class="font-outfit font-normal text-[17px] bg-[#E8C999] rounded-[83px] px-6 py-3 mt-auto">
+        <button onclick="location.href='agenda.html'" class="font-outfit font-normal text-[17px] bg-[#E8C999] rounded-[83px] px-6 py-3 mt-auto">
           CONSULTER L'AGENDA
         </button>
       </div>
@@ -215,8 +215,8 @@
       </h2>
       <ul class="flex flex-col gap-3 text-left">
         <li class="font-outfit font-regular text-[18px] hover:underline cursor-pointer">Cours</li>
-        <li class="font-outfit font-regular text-[18px] hover:underline cursor-pointer">Salles</li>
-        <li class="font-outfit font-regular text-[18px] hover:underline cursor-pointer">Agenda</li>
+        <li><a href="historiquesalles.html" class="font-outfit font-regular text-[18px] hover:underline cursor-pointer">Salles</a></li>
+        <li><a href="semaineBlancheActivee.html" class="font-outfit font-regular text-[18px] hover:underline cursor-pointer">Agenda</a></li>
       </ul>
     </div>
 
@@ -228,7 +228,7 @@
       <form class="flex flex-col sm:flex-row gap-3 justify-center">
         <input type="email" placeholder="Votre email..."
                class="flex-1 px-4 py-3 rounded-lg text-black placeholder-black bg-[#E8C999] focus:outline-none" />
-        <button type="submit" class="px-6 py-3 bg-[#8E1616] text-white rounded-[83px] font-outfit font-regular">
+        <button type="button" onclick="location.href='historiquesalles.html'" class="px-6 py-3 bg-[#8E1616] text-white rounded-[83px] font-outfit font-regular">
           SUBMIT
         </button>
       </form>

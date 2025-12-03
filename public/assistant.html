@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assistant EspritHub</title>
+
+  <!-- Tailwind compilé depuis src/input.css -->
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-[#8E1616]">
+
+  <!-- ======================= HEADER ======================= -->
+  <header class="relative bgpage flex flex-col md:flex-row items-center justify-center md:justify-start px-4 sm:px-6 md:px-10 min-h-[300px] sm:min-h-[350px] md:min-h-[387px]">
+    
+    <!-- Logo à gauche -->
+    <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-8">
+      <img src="../logoo.png" alt="Logo" class="w-[150px] sm:w-[200px] md:w-[343px] h-[150px] sm:h-[200px] md:h-[343px] object-contain">
+    </div>
+
+    <!-- Texte centré / à droite -->
+    <div class="text-center md:text-left">
+      <h1 class="text-[28px] sm:text-[36px] md:text-[64px] text-[var(--color-esprithub)] font-outfit font-bold leading-tight">
+        ESPRITHUB
+      </h1>
+      <p class="text-[18px] sm:text-[24px] md:text-[50px] text-black font-lato font-medium italic mt-1 sm:mt-2 md:mt-0.5 leading-snug">
+        Votre compagnon de réussite au quotidien
+      </p>
+    </div>
+
+    <!-- Icônes en bas à droite -->
+    <div class="absolute bottom-5 right-5 flex space-x-2 sm:space-x-3 z-10">
+      <img src="../person.png" alt="Person" class="w-[24px] sm:w-[30px] h-[24px] sm:h-[30px] object-contain">
+      <img src="../notif.png" alt="Notifications" class="w-[24px] sm:w-[30px] h-[24px] sm:h-[30px] object-contain">
+      <img src="../chercher.png" alt="Recherche" class="w-[24px] sm:w-[30px] h-[24px] sm:h-[30px] object-contain">
+    </div>
+
+  </header>
+
+  <!-- ======================= NAVBAR ======================= -->
+  <nav class="w-full bg-[#8E1616] mt-6 relative z-10">
+    <ul class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-12 font-outfit font-extralight text-[16px] sm:text-[18px] md:text-[22px] text-[#E2E6CD]">
+      <li>
+        <a href="index.html" class="inline-block px-4 py-2 hover:opacity-80 transform transition duration-300 hover:scale-105">
+          HOME
+        </a>
+      </li>
+      <li>
+        <a href="#" class="inline-block px-4 py-2 hover:opacity-80 transform transition duration-300 hover:scale-105">
+          COURS
+        </a>
+      </li>
+      <li>
+        <a href="#" class="inline-block px-4 py-2 hover:opacity-80 transform transition duration-300 hover:scale-105">
+          SALLES
+        </a>
+      </li>
+      <li>
+        <a href="agenda.html" class="inline-block px-4 py-2 bg-white text-[#8E1616] rounded-lg font-outfit font-medium hover:opacity-90 transform transition duration-300">
+          AGENDA
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ======================= SECTION ASSISTANT ======================= -->
+  <!-- Layout responsive (plus de largeur minimale figée) -->
+  <main class="relative bg-[#8E1616] overflow-hidden w-full pb-24 lg:pb-32">
+    <!-- halos décoratifs pour reproduire la scène Figma -->
+    <div class="pointer-events-none absolute -left-32 sm:-left-20 top-10 w-[420px] sm:w-[520px] h-[420px] sm:h-[520px] bg-[#c84540] opacity-50 blur-[140px] rounded-full"></div>
+    <div class="pointer-events-none absolute right-[-260px] bottom-[-160px] w-[520px] sm:w-[640px] h-[520px] sm:h-[640px] bg-[#4b010f] opacity-60 blur-[160px] rounded-full"></div>
+    <!-- Bloc central qui reprend fidèlement le layout Figma -->
+    <section class="max-w-[1120px] mx-auto px-4 sm:px-6 md:px-8 pt-8 sm:pt-10 lg:pt-12 relative">
+
+      <!-- Titre + sous-titre -->
+      <div class="text-center text-white mb-6 sm:mb-8 md:mb-10">
+        <h2 class="font-[Poppins] font-bold text-[32px] sm:text-[42px] md:text-[52px] lg:text-[60px] tracking-tight">
+          Assistant Esprit Hub
+        </h2>
+        <p class="mt-3 max-w-2xl mx-auto text-[16px] sm:text-[18px] md:text-[20px] text-white">
+          Je t’aide avec ton emploi du temps, tes cours, tes rendus… Pose-moi ta question&nbsp;!
+        </p>
+      </div>
+
+      <!-- Conteneur carte + robot, pour permettre le chevauchement du robot -->
+      <div class="relative">
+
+        <!-- Carte principale Assistant -->
+        <div class="bg-white rounded-[24px] sm:rounded-[28px] lg:rounded-[32px] shadow-[0_25px_50px_rgba(0,0,0,0.25)] border border-white/40 px-4 sm:px-8 md:px-12 lg:px-16 py-8 sm:py-10 lg:py-12">
+
+          <!-- Surface centrale (zone de chat) -->
+          <div class="bg-[#F5D9D0]/80 rounded-[24px] sm:rounded-[28px] lg:rounded-[32px] px-4 sm:px-6 md:px-10 py-6 sm:py-8 lg:py-10 flex flex-col gap-8 lg:gap-10">
+
+          <!-- Messages individuels, décalés comme sur la maquette (question à droite puis réponse à gauche plus bas) -->
+          <div class="flex flex-col gap-6 lg:gap-8">
+
+            <!-- Q1 : Prochain DS Réseaux (en haut à droite) -->
+            <div class="inline-flex items-center justify-center max-w-[380px] w-full md:w-auto px-6 sm:px-8 py-3 rounded-[28px] text-white text-[13px] sm:text-[14px] md:text-[16px] font-medium shadow-[0_10px_20px_rgba(0,0,0,0.25)] self-end"
+                 style="background-color:#8E1616; border:1px solid rgba(255,255,255,0.6);">
+              C’est quand mon prochain DS Réseaux&nbsp;?
+            </div>
+
+            <!-- R1 : Carte DS Réseaux (plus bas, à gauche) -->
+            <div class="inline-block max-w-md bg-white rounded-[18px] shadow-md px-5 py-4 border-2 border-[#8B1E3F] text-[12px] sm:text-[13px] md:text-[14px] text-[#1D1913] self-start">
+              <div class="space-y-1">
+                <p class="font-semibold text-[12px] sm:text-[13px] text-[#1F2937]">
+                  Jeudi 20 novembre
+                </p>
+                <p class="text-[#1F2937]">
+                  → 14h–16h en Amphi 3
+                </p>
+                <p class="font-lato text-[#4B5563]">
+                  Tu veux que je t’ajoute un rappel 1 jour avant&nbsp;?
+                </p>
+              </div>
+            </div>
+
+            <!-- Q2 : Résumé Cloud (milieu à droite) -->
+            <div class="inline-block max-w-xs sm:max-w-sm text-white rounded-[18px] px-6 py-3 shadow-md text-[12px] sm:text-[13px] md:text-[14px] self-end mt-2"
+                 style="background-color:#8E1616; border:1px solid rgba(255,255,255,0.6);">
+              Résume-moi le cours de Cloud de vendredi dernier.
+            </div>
+
+            <!-- R2 : Carte Résumé Cloud (en dessous, à gauche) -->
+            <div class="inline-block max-w-md bg-white rounded-[18px] shadow-md px-5 py-4 border-2 border-[#8B1E3F] text-[12px] sm:text-[13px] md:text-[14px] text-[#1D1913] self-start">
+              <div class="bg-[#F9FAFB] rounded-[12px] px-4 py-3 space-y-2">
+                <div class="flex items-center gap-2">
+                  <span class="text-lg">📚</span>
+                  <p class="font-semibold text-[13px] sm:text-[14px] text-[#8B1E3F]">
+                    Résumé - Cloud Computing
+                  </p>
+                </div>
+                <div class="space-y-1 text-[#374151]">
+                  <p>• Types de déploiement cloud</p>
+                  <p>• Services IaaS, PaaS, SaaS</p>
+                  <p>• Avantages et inconvénients</p>
+                </div>
+              </div>
+              <p class="mt-2 text-[#4B5563]">
+                Veux-tu les slides PDF&nbsp;?
+              </p>
+            </div>
+
+            <!-- Q3 : Planning optimisé (en bas à droite) -->
+            <div class="inline-block max-w-xs sm:max-w-sm text-white rounded-[18px] px-6 py-3 shadow-md text-[12px] sm:text-[13px] md:text-[14px] self-end mt-2"
+                 style="background-color:#8E1616; border:1px solid rgba(255,255,255,0.6);">
+              Aide-moi à organiser ma semaine.
+            </div>
+
+            <!-- R3 : Carte Planning optimisé (en dessous, à gauche) -->
+            <div class="inline-block max-w-md bg-white rounded-[18px] shadow-md px-5 py-4 border-2 border-[#8B1E3F] text-[12px] sm:text-[13px] md:text-[14px] text-[#1D1913] self-start">
+              <div class="bg-gradient-to-r from-[#F5E6D3] to-white rounded-[12px] px-4 py-3 space-y-3">
+                <p class="font-semibold text-[13px] sm:text-[14px] text-[#8B1E3F]">
+                  📅 Planning optimisé
+                </p>
+                <div class="grid grid-cols-2 gap-2 text-[11px] sm:text-[12px] text-[#111827]">
+                  <div class="bg-white rounded-[4px] px-2 py-1.5 text-center">
+                    <p>Lun: Cours 8h–12h</p>
+                  </div>
+                  <div class="bg-white rounded-[4px] px-2 py-1.5 text-center">
+                    <p>Mar: TP + Révisions</p>
+                  </div>
+                  <div class="bg-white rounded-[4px] px-2 py-1.5 text-center">
+                    <p>Mer: Projet groupe</p>
+                  </div>
+                  <div class="bg-white rounded-[4px] px-2 py-1.5 text-center">
+                    <p>Jeu: DS Réseaux</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Boutons rapides + champ input -->
+          <div class="mt-4 sm:mt-6 flex flex-col gap-6">
+            <!-- Boutons rapides -->
+            <div class="flex flex-wrap justify-center gap-4 text-[11px] sm:text-[12px] md:text-[13px]">
+              <button class="px-6 py-2 rounded-full bg-[#F5E6D3] text-[#8B1E3F] font-medium shadow-sm">
+                Emploi du temps
+              </button>
+              <button class="px-6 py-2 rounded-full bg-[#F5E6D3] text-[#8B1E3F] font-medium shadow-sm">
+                Mes notes
+              </button>
+              <button class="px-6 py-2 rounded-full bg-[#F5E6D3] text-[#8B1E3F] font-medium shadow-sm">
+                Rendu à faire
+              </button>
+              <button class="px-6 py-2 rounded-full bg-[#F5E6D3] text-[#8B1E3F] font-medium shadow-sm">
+                Réserver salle
+              </button>
+            </div>
+
+            <!-- Barre de saisie (large mais s'arrête avant le robot) -->
+            <div class="max-w-3xl lg:max-w-[calc(100%-400px)] mx-auto w-full flex items-center gap-3 sm:gap-4 bg-white/95 rounded-[16px] px-4 sm:px-6 py-3 shadow-md">
+              <input
+                type="text"
+                placeholder="Tape ton message ou dis-moi ce que tu veux..."
+                class="flex-1 border-none focus:outline-none text-[13px] sm:text-[14px] md:text-[16px] text-[#1D1913] bg-transparent placeholder:text-[#ADAEBC]"
+              />
+              <button class="flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#F5E6D3] text-[#8B1E3F] text-xs font-semibold">
+                🎙
+              </button>
+              <button class="flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#9F7AEA] text-white text-xs font-semibold">
+                ➤
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Robot : chevauche la carte sur desktop, en dessous sur mobile -->
+        <div class="mt-10 flex justify-center lg:justify-end">
+          <img
+            src="../icon/122.png"
+            alt="Assistant robot EspritHub"
+            class="w-[220px] sm:w-[260px] md:w-[300px] lg:w-[340px] h-auto object-contain drop-shadow-2xl lg:absolute lg:-bottom-24 lg:-right-8"
+          >
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="bg-[#F8EEDF] text-black flex flex-col min-h-[300px]">
+
+    <!-- Contenu principal du footer -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 flex flex-col md:flex-row justify-between gap-10 py-10">
+
+      <!-- ======================= CONTACTEZ-NOUS ======================= -->
+      <div class="flex-1">
+        <h2 class="font-outfit font-light text-[24px] uppercase text-center mb-6">
+          CONTACTEZ-NOUS
+        </h2>
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-3">
+            <img src="../tel.png" alt="Téléphone" class="w-6 h-6">
+            <span class="font-outfit font-regular text-[18px]">+216 70 685 685</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="../msg.png" alt="Email" class="w-6 h-6">
+            <span class="font-outfit font-regular text-[18px]">contact@esprithub.tn</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======================= FONCTIONNALITES ======================= -->
+      <div class="flex-1">
+        <h2 class="font-outfit font-light text-[24px] uppercase text-center mb-6">
+          FONCTIONNALITES
+        </h2>
+        <ul class="flex flex-col gap-3 text-left">
+          <li class="font-outfit font-regular text-[18px] hover:underline cursor-pointer">Cours</li>
+          <li class="font-outfit font-regular text-[18px] hover:underline cursor-pointer">Salles</li>
+          <li class="font-outfit font-regular text-[18px] hover:underline cursor-pointer">Agenda</li>
+        </ul>
+      </div>
+
+      <!-- ======================= JOIN OUR NEWSLETTER ======================= -->
+      <div class="flex-1">
+        <h2 class="font-outfit font-light text-[24px] uppercase text-center mb-6">
+          JOIN OUR NEWSLETTER
+        </h2>
+        <form class="flex flex-col sm:flex-row gap-3 justify-center">
+          <input type="email" placeholder="Votre email..."
+                 class="flex-1 px-4 py-3 rounded-lg text-black placeholder-black bg-[#E8C999] focus:outline-none" />
+          <button type="submit" class="px-6 py-3 bg-[#8E1616] text-white rounded-[83px] font-outfit font-regular">
+            SUBMIT
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- ======================= COPYRIGHT ======================= -->
+    <p class="text-center font-outfit font-regular text-[18px] mt-auto mb-0">
+      ESPRITHUB © 2025 — TOUS DROITS RÉSERVÉS
+    </p>
+  </footer>
+
+</body>
+</html>
+
+

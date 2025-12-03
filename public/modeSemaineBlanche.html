@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EspritHub - Votre compagnon de réussite</title>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-[#8E1616]"> <!-- body en #8E1616 -->
+
+  <!-- ======================= HEADER ======================= -->
+  <header class="relative bgpage flex flex-col md:flex-row items-center justify-center md:justify-start px-4 sm:px-6 md:px-10 min-h-[300px] sm:min-h-[350px] md:min-h-[387px]">
+    
+    <!-- Logo à gauche -->
+    <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-8">
+      <img src="../assets/home/logoo.png" alt="Logo" class="w-[150px] sm:w-[200px] md:w-[343px] h-[150px] sm:h-[200px] md:h-[343px] object-contain">
+    </div>
+
+    <!-- Texte centré / à droite -->
+    <div class="text-center md:text-left">
+      <h1 class="text-[28px] sm:text-[36px] md:text-[64px] text-[var(--color-esprithub)] font-outfit font-bold leading-tight">
+        ESPRITHUB
+      </h1>
+      <p class="text-[18px] sm:text-[24px] md:text-[50px] text-black font-lato font-medium italic mt-1 sm:mt-2 md:mt-0.5 leading-snug">
+        Votre compagnon de réussite au quotidien
+      </p>
+    </div>
+
+    <!-- Icônes en bas à droite -->
+    <div class="absolute bottom-5 right-5 flex space-x-2 sm:space-x-3 z-10">
+      <img src="../assets/home/person.png" alt="Person" class="w-[24px] sm:w-[30px] h-[24px] sm:h-[30px] object-contain">
+      <img src="../assets/home/notif.png" alt="Notifications" class="w-[24px] sm:w-[30px] h-[24px] sm:h-[30px] object-contain">
+      <img src="../assets/home/chercher.png" alt="Recherche" class="w-[24px] sm:w-[30px] h-[24px] sm:h-[30px] object-contain">
+    </div>
+
+  </header>
+
+  <!-- ======================= NAVBAR : EN DEHORS DU HEADER ======================= -->
+  <nav class="w-full bg-[#8E1616] mt-6 relative z-10">
+    <ul class="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-12 font-outfit font-extralight text-[16px] sm:text-[18px] md:text-[22px] text-[#E2E6CD]">
+      <li>
+        <a href="indexOns.html" class="inline-block hover:opacity-80 transform transition duration-300 hover:scale-105">
+          HOME
+        </a>
+      </li>
+      <li>
+        <a href="#" class="inline-block hover:opacity-80 transform transition duration-300 hover:scale-105">
+          COURS
+        </a>
+      </li>
+      <li>
+        <a href="sallesrecommendees.html" class="inline-block hover:opacity-80 transform transition duration-300 hover:scale-105">
+          SALLES
+        </a>
+      </li>
+      <li>
+        <a href="#" class="inline-block hover:opacity-80 transform transition duration-300 hover:scale-105">
+          AGENDA
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ======================= CONTENU MODE SEMAINE BLANCHE ======================= -->
+  <main class="mode-blanche">
+
+    <div class="mode-blanche-container">
+
+      <!-- 🔙 Bouton retour à la page précédente -->
+      <a href="javascript:history.back()" class="mode-blanche-back">
+        RETOUR A LA PAGE PRÉCÉDENTE
+      </a>
+
+      <section class="mode-blanche-hero">
+        <div class="hero-texte">
+          <p class="hero-label">MODE SEMAINE BLANCHE</p>
+
+          <h2 class="hero-titre">
+            Rechargez, Respirez,<br> Équilibrez Votre Rythme
+          </h2>
+
+          <p class="hero-paragraphe">
+            Profitez volontairement des moments de pause, sans culpabiliser.
+            <span class="gras">ESPRITHUB</span> valorise la
+            <span class="italique">semaine de repos</span> comme une partie essentielle de votre réussite.
+          </p>
+
+          <p class="hero-paragraphe">
+            Déconnectez-vous pour mieux revenir : libérez votre esprit, protégez votre santé mentale et retrouvez votre créativité.
+          </p>
+
+          <a href="semaineBlancheActivee.html" class="hero-bouton">
+            Activer la semaine blanche
+          </a>
+
+        </div>
+
+        <div class="hero-image-wrapper">
+          <img src="https://img.freepik.com/photos-gratuite/cozy-winter-scene-reading-and-tea-by-the-window_23-2152019516.jpg?semt=ais_incoming&w=740&q=80" class="hero-image">
+        </div>
+      </section>
+
+      <section class="mode-blanche-section">
+        <h3 class="section-titre">Pourquoi Prendre Du Repos Planifié ?</h3>
+
+        <div class="cartes-grid">
+
+          <article class="carte">
+            <div class="carte-icone">
+              <img src="https://img.freepik.com/vecteurs-libre/illustration-plate-personne-ayant-problemes-sante-mentale_52683-68965.jpg?semt=ais_hybrid&w=740&q=80">
+            </div>
+            <h4 class="carte-titre">Réduire la charge mentale</h4>
+            <p class="carte-texte">
+              Offrez à votre cerveau une vraie pause pour éviter la surcharge et la fatigue cognitive.
+            </p>
+          </article>
+
+          <article class="carte">
+            <div class="carte-icone">
+              <img src="https://img.freepik.com/photos-gratuite/pense-bete-ampoule-dessinee-fournitures-bureau-fond-blanc_23-2148245971.jpg?semt=ais_hybrid&w=740&q=80">
+            </div>
+            <h4 class="carte-titre">Stimuler la créativité</h4>
+            <p class="carte-texte">
+              Un esprit reposé est plus ouvert aux nouvelles idées et solutions innovantes.
+            </p>
+          </article>
+
+          <article class="carte">
+            <div class="carte-icone">
+              <img src="https://img.freepik.com/photos-gratuite/close-up-livres-pile-pomme-rouge_1252-749.jpg?semt=ais_incoming&w=740&q=80">
+            </div>
+            <h4 class="carte-titre">Retrouver l’équilibre vie / études</h4>
+            <p class="carte-texte">
+              Reconnectez-vous à vos besoins, votre sommeil et vos proches.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ===== SECTION CONSEILS (nouveau style) ===== -->
+      <section class="mode-blanche-section conseils-section">
+        <h3 class="section-titre conseils-titre">
+          Suivez Ces Conseils Pour Une Semaine Plus Sereine
+        </h3>
+
+        <div class="conseils-bloc">
+          <ul class="conseils-liste">
+            <li>Prévoyez au moins deux jours de repos.</li>
+            <li>Éteignez les écrans avant le coucher.</li>
+            <li>Faites une activité de détente quotidienne.</li>
+            <li>Accordez-vous un créneau réservé pour vous.</li>
+            <li>Reprenez votre rythme progressivement.</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- ==========================================================
+       ========================= FOOTER =========================
+       ========================================================== -->
+  <footer class="bg-[#F8EEDF] text-black flex flex-col min-h-[300px]">
+
+    <!-- Contenu principal du footer -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 flex flex-col md:flex-row justify-between gap-10 py-10">
+
+      <!-- ======================= CONTACTEZ-NOUS ======================= -->
+      <div class="flex-1">
+        <h2 class="font-outfit font-light text-[24px] uppercase text-center mb-6">
+          CONTACTEZ-NOUS
+        </h2>
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-3">
+            <img src="../assets/home/tel.png" alt="Téléphone" class="w-6 h-6">
+            <span class="font-outfit font-regular text-[18px]">+216 70 685 685</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="../assets/home/msg.png" alt="Email" class="w-6 h-6">
+            <span class="font-outfit font-regular text-[18px]">contact@esprithub.tn</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======================= FONCTIONNALITES ======================= -->
+      <div class="flex-1">
+        <h2 class="font-outfit font-light text-[24px] uppercase text-center mb-6">
+          FONCTIONNALITES
+        </h2>
+        <ul class="flex flex-col gap-3 text-left">
+          <li class="font-outfit font-regular text-[18px] hover:underline cursor-pointer">Cours</li>
+          <li class="font-outfit font-regular text-[18px] hover:underline cursor-pointer">Salles</li>
+          <li class="font-outfit font-regular text-[18px] hover:underline cursor-pointer">Agenda</li>
+        </ul>
+      </div>
+
+      <!-- ======================= JOIN OUR NEWSLETTER ======================= -->
+      <div class="flex-1">
+        <h2 class="font-outfit font-light text-[24px] uppercase text-center mb-6">
+          JOIN OUR NEWSLETTER
+        </h2>
+        <form class="flex flex-col sm:flex-row gap-3 justify-center">
+          <input type="email" placeholder="Votre email..."
+                class="flex-1 px-4 py-3 rounded-lg text-black placeholder-black bg-[#E8C999] focus:outline-none" />
+          <button type="submit" class="px-6 py-3 bg-[#8E1616] text-white rounded-[83px] font-outfit font-regular">
+            SUBMIT
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- ======================= COPYRIGHT ======================= -->
+    <p class="text-center font-outfit font-regular text-[18px] mt-auto mb-0">
+      ESPRITHUB © 2025 — TOUS DROITS RÉSERVÉS
+    </p>
+  </footer>
+
+</body>
+</html>
+
+<style>
+/* ======= FOND GLOBAL ======= */
+body {
+    background-color: #8E1616 !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================== MODE SEMAINE BLANCHE ================== */
+
+.mode-blanche {
+    background-color: #8E1616;      /* 🎯 Fond rouge désiré */
+    border-radius: 40px 40px 0 0;
+    margin-top: 40px;
+    padding: 50px 0 70px;
+    width: 100%;
+}
+
+.mode-blanche-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Bouton retour */
+.mode-blanche-back {
+    display: inline-block;
+    margin-bottom: 24px;
+    padding: 16px 40px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    background-color: #F8EEDF;   /* fond crème comme sur la capture */
+    color: #8E1616;              /* texte rouge EspritHub */
+    border-radius: 999px;        /* bouton bien arrondi */
+    border: 2px solid #00000040; /* léger contour */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsivité du bouton retour : centré et pleine largeur sur petits écrans */
+@media (max-width: 640px) {
+    .mode-blanche-back {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* HERO */
+.mode-blanche-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.hero-texte {
+    flex: 1;
+}
+
+.hero-label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px; /* agrandi */
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #F8EEDF;  /* crème */
+    margin-bottom: 8px;
+}
+
+.hero-titre {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 40px; /* agrandi */
+    line-height: 1.15;
+    color: #F8EEDF; /* crème */
+    margin-bottom: 16px;
+}
+
+.hero-paragraphe {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px; 
+    line-height: 4;
+    color: #F8EEDF; 
+    margin-bottom: 8px;
+}
+
+.hero-bouton {
+    margin-top: 16px;
+    padding: 8px 24px; 
+    border-radius: 999px;
+    border: none;
+    background-color: #F8EEDF;
+    color: #8E1616;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-bouton:hover {
+    filter: brightness(1.1);
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 1000px; 
+    max-height: 1000px; 
+    height: auto;
+    border-radius: 32px;
+    object-fit: cover;
+}
+
+
+.hero-image {
+    width: 100%;
+    max-width: 360px; /* agrandi */
+    border-radius: 32px;
+    background-color: #F4D9C3;
+    border: 1px solid #E2BFA2;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+
+/* Desktop : texte + image côte à côte */
+@media (min-width: 768px) {
+    .mode-blanche-hero {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .hero-titre {
+        font-size: 56px; /* agrandi pour desktop */
+    }
+
+    .hero-paragraphe {
+        font-size: 18px;
+    }
+
+    .hero-label {
+        font-size: 14px;
+    }
+
+    .hero-bouton {
+        font-size: 16px;
+        padding: 14px 36px;
+    }
+
+    .hero-image {
+        max-width: 420px;
+    }
+}
+
+/* TITRES DE SECTION */
+.mode-blanche-section {
+    margin-top: 48px;
+}
+
+.section-titre {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 28px; /* titre standard */
+    color: #F8EEDF; /* crème */
+    margin-bottom: 24px;
+}
+
+/* CARTES */
+.cartes-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .cartes-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.carte {
+    background-color: #F4D9C3;
+    border-radius: 28px;
+    padding: 28px 20px;
+    text-align: center;
+    border: 1px solid #E2BFA2;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.carte-icone {
+    width: 96px;
+    height: 96px;
+    border-radius: 999px;
+    background-color: #F8EEDF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px auto;
+}
+
+.carte-icone img {
+    max-width: 64px;
+    max-height: 64px;
+    width: auto;
+    height: auto;
+}
+
+.carte-titre {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    color: #5C0900;
+    margin-bottom: 8px;
+}
+
+.carte-texte {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #4b1f1f;
+    line-height: 1.5;
+}
+
+/* Ajustements pour écrans larges : encore plus grand */
+@media (min-width: 1024px) {
+    .carte {
+        padding: 32px 24px;
+    }
+    .carte-icone {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+    .carte-icone img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
+
+/* ===== SECTION CONSEILS (fond rouge + texte crème) ===== */
+
+.conseils-section .conseils-titre {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #F8EEDF;
+}
+
+/* plus grand sur desktop */
+@media (min-width: 1024px) {
+    .conseils-section .conseils-titre {
+        font-size: 48px;
+    }
+}
+
+.conseils-bloc {
+    background-color: transparent;    /* plus de carte beige */
+    border-radius: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.conseils-liste {
+    padding-left: 24px;
+    margin: 0;
+}
+
+.conseils-liste li {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #F8EEDF; /* texte crème sur fond rouge */
+    margin-bottom: 8px;
+}
+
+@media (min-width: 1024px) {
+    .conseils-liste li {
+        font-size: 20px;
+    }
+}
+
+/* UTILS */
+.gras {
+    font-weight: 600;
+}
+
+.italique {
+    font-style: italic;
+}
+</style>
