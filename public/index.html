@@ -5,102 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EspritHub - Votre compagnon de réussite</title>
 
-  <!-- Configuration Tailwind CSS -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            'outfit': ['Outfit', 'sans-serif'],
-            'lato': ['Lato', 'sans-serif'],
-            'heading': ['Playfair Display', 'serif'],
-            'body': ['Inter', 'sans-serif']
-          },
-          colors: {
-            'primary': '#8B0000',
-            'accent': '#E8C8AE',
-            'cream': '#F8EEDF',
-            'dark': '#5C0900',
-            'card-bg': '#F4D9C3',
-            'esprithub': '#8E1616',
-            'e2e6cd': '#E2E6CD',
-            'eef2d5': '#EEF2D5',
-            'e8c999': '#E8C999'
-          },
-          borderRadius: {
-            '50': '50px',
-            '83': '83px'
-          },
-          minHeight: {
-            '300': '300px',
-            '350': '350px',
-            '387': '387px'
-          },
-          height: {
-            '44': '44px',
-            '50': '50px',
-            '54': '54px',
-            '301.09': '301.09px',
-            '550': '550px',
-            '600': '600px',
-            '650': '650px',
-            '700': '700px'
-          },
-          width: {
-            '180': '180px',
-            '220': '220px',
-            '310': '310px',
-            '343': '343px',
-            '359.75': '359.75px'
-          },
-          fontSize: {
-            '85': '85px',
-            '64': '64px',
-            '50': '50px',
-            '48': '48px',
-            '36': '36px',
-            '32': '32px',
-            '28': '28px',
-            '24': '24px',
-            '22': '22px',
-            '20': '20px',
-            '18': '18px',
-            '17': '17px',
-            '16': '16px',
-            '14': '14px'
-          },
-          margin: {
-            '0.5': '0.125rem'
-          },
-          spacing: {
-            '6': '1.5rem',
-            '8': '2rem',
-            '10': '2.5rem',
-            '12': '3rem',
-            '16': '4rem',
-            '20': '5rem',
-            '24': '6rem'
-          }
-        }
-      }
-    }
-  </script>
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-[#8E1616]">
+<body class="bg-[#8E1616]"> <!-- body en #8E1616 -->
 
   <!-- ======================= HEADER ======================= -->
   <header class="relative bgpage flex flex-col md:flex-row items-center justify-center md:justify-start px-4 sm:px-6 md:px-10 min-h-[300px] sm:min-h-[350px] md:min-h-[387px]">
     
     <!-- Logo à gauche -->
     <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-8">
-      <img src="../assets/home/logoo.png" alt="Logo" class="w-[150px] sm:w-[200px] md:w-[343px] h-[150px] sm:h-[200px] md:h-[343px] object-contain">
+      <img src="../logoo.png" alt="Logo" class="w-[150px] sm:w-[200px] md:w-[343px] h-[150px] sm:h-[200px] md:h-[343px] object-contain">
     </div>
 
     <!-- Texte centré / à droite -->
@@ -115,33 +32,33 @@
 
     <!-- Icônes en bas à droite -->
     <div class="absolute bottom-5 right-5 flex space-x-2 sm:space-x-3 z-10">
-      <img src="../assets/home/person.png" alt="Person" class="w-[24px] sm:w-[30px] h-[24px] sm:h-[30px] object-contain">
-      <img src="../assets/home/notif.png" alt="Notifications" class="w-[24px] sm:w-[30px] h-[24px] sm:h-[30px] object-contain">
-      <img src="../assets/home/chercher.png" alt="Recherche" class="w-[24px] sm:w-[30px] h-[24px] sm:h-[30px] object-contain">
+      <img src="../person.png" alt="Person" class="w-[24px] sm:w-[30px] h-[24px] sm:h-[30px] object-contain">
+      <img src="../notif.png" alt="Notifications" class="w-[24px] sm:w-[30px] h-[24px] sm:h-[30px] object-contain">
+      <img src="../chercher.png" alt="Recherche" class="w-[24px] sm:w-[30px] h-[24px] sm:h-[30px] object-contain">
     </div>
 
   </header>
 
   <!-- ======================= NAVBAR : EN DEHORS DU HEADER ======================= -->
 <nav class="w-full bg-[#8E1616] mt-6 relative z-10">
-  <ul class="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-12 font-outfit font-extralight text-[16px] sm:text-[18px] md:text-[22px] text-[#E2E6CD]">
+  <ul class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-12 font-outfit font-extralight text-[16px] sm:text-[18px] md:text-[22px] text-[#E2E6CD]">
     <li>
-      <a href="index.html" class="inline-block hover:opacity-80 transform transition duration-300 hover:scale-105">
+      <a href="#" class="inline-block px-4 py-2 hover:opacity-80 transform transition duration-300 hover:scale-105">
         HOME
       </a>
     </li>
     <li>
-      <a href="#" class="inline-block hover:opacity-80 transform transition duration-300 hover:scale-105">
+      <a href="#" class="inline-block px-4 py-2 hover:opacity-80 transform transition duration-300 hover:scale-105">
         COURS
       </a>
     </li>
     <li>
-      <a href="sallesrecommendees.html" class="inline-block hover:opacity-80 transform transition duration-300 hover:scale-105">
+      <a href="#" class="inline-block px-4 py-2 hover:opacity-80 transform transition duration-300 hover:scale-105">
         SALLES
       </a>
     </li>
     <li>
-      <a href="#" class="inline-block hover:opacity-80 transform transition duration-300 hover:scale-105">
+      <a href="agenda.html" class="inline-block px-4 py-2 hover:opacity-80 transform transition duration-300 hover:scale-105">
         AGENDA
       </a>
     </li>
@@ -159,7 +76,7 @@
        <!-- Texte principal -->
       <p class="font-lato font-medium text-[16px] sm:text-[18px] md:text-[24px] text-white mt-2 sm:mt-4 md:mt-6"
          style="line-height:50px; letter-spacing:1%;">
-        Une plateforme tout-en-un pour les étudiants d'ESPRIT : accédez à vos cours, TD et examens, réservez vos salles et organisez votre temps facilement.
+        Une plateforme tout-en-un pour les étudiants d’ESPRIT : accédez à vos cours, TD et examens, réservez vos salles et organisez votre temps facilement.
       </p>
 
       <!-- Texte secondaire -->
@@ -177,12 +94,13 @@
 
      <!-- Image Students agrandie -->
 <div class="flex-1">
-  <img src="../assets/home/students.png" alt="Students" class="w-full h-[550px] sm:h-[600px] md:h-[650px] lg:h-[700px] object-cover">
+  <img src="../students.png" alt="Students" class="w-full h-[550px] sm:h-[600px] md:h-[650px] lg:h-[700px] object-cover">
 </div>
       
     </div>
   </section>
 
+<!-- ======================= SECTION : PAR OÙ COMMENCER ? ======================= -->
 <!-- ======================= SECTION : PAR OÙ COMMENCER ? ======================= -->
 <section class="py-12 sm:py-16 md:py-20 bg-[#8E1616] mt-2 sm:mt-6 md:mt-8 px-4 sm:px-6 md:px-10">
   <div class="max-w-6xl mx-auto">
@@ -197,33 +115,33 @@
 
       <!-- Carte 1 -->
       <div class="bg-[var(--color-card-bg)] rounded-[50px] p-4 sm:p-6 md:p-8 shadow-lg text-center flex flex-col items-center">
-        <img src="../assets/home/cours.png" class="w-[359.75px] h-[301.09px] object-cover rounded-lg mb-2 mt-4" />
+        <img src="../cours.png" class="w-[359.75px] h-[301.09px] object-cover rounded-lg mb-2 mt-4" />
         <p class="font-outfit font-medium text-[17px] text-black mt-6 mb-6 text-center">
           Trouvez instantanément vos cours, TD et sujets d'examen dans un seul espace.
         </p>
-        <a href="ressources.html" class="font-outfit font-normal text-[17px] bg-[#E8C999] rounded-[83px] px-6 py-3 mt-auto inline-block text-center">
+        <button class="font-outfit font-normal text-[17px] bg-[#E8C999] rounded-[83px] px-6 py-3 mt-auto">
           ACCÉDER AUX COURS
-        </a>
+        </button>
       </div>
 
       <!-- Carte 2 -->
       <div class="bg-[var(--color-card-bg)] rounded-[50px] p-4 sm:p-6 md:p-8 shadow-lg text-center flex flex-col items-center">
-        <img src="../assets/home/salles.png" class="w-[359.75px] h-[301.09px] object-cover rounded-lg mb-2 mt-4" />
+        <img src="../salles.png" class="w-[359.75px] h-[301.09px] object-cover rounded-lg mb-2 mt-4" />
         <p class="font-outfit font-medium text-[17px] text-black mt-6 mb-6 text-center">
           Localisez et réservez les salles libres ou le matériel info/vidéo en temps réel.
         </p>
-        <a href="reservationExpressOns.html" class="font-outfit font-normal text-[17px] bg-[#E8C999] rounded-[83px] px-6 py-3 mt-auto inline-block text-center">
+        <button class="font-outfit font-normal text-[17px] bg-[#E8C999] rounded-[83px] px-6 py-3 mt-auto">
           RÉSERVER UNE SALLE
-        </a>
+        </button>
       </div>
 
       <!-- Carte 3 -->
       <div class="bg-[var(--color-card-bg)] rounded-[50px] p-4 sm:p-6 md:p-8 shadow-lg text-center flex flex-col items-center">
-        <img src="../assets/home/agenda.png" class="w-[359.75px] h-[301.09px] object-cover rounded-lg mb-2 mt-4" />
+        <img src="../agenda.png" class="w-[359.75px] h-[301.09px] object-cover rounded-lg mb-2 mt-4" />
         <p class="font-outfit font-medium text-[17px] text-black mt-6 mb-6 text-center">
           Ne manquez plus aucune deadline, événement de club ou opportunité d'emploi.
         </p>
-        <button onclick="location.href='agenda.html'" class="font-outfit font-normal text-[17px] bg-[#E8C999] rounded-[83px] px-6 py-3 mt-auto">
+        <button class="font-outfit font-normal text-[17px] bg-[#E8C999] rounded-[83px] px-6 py-3 mt-auto">
           CONSULTER L'AGENDA
         </button>
       </div>
@@ -232,7 +150,15 @@
   </div>
 </section>
 
-<!-- ================= SECTION : POURQUOI ? =================== -->
+
+</body>
+</html>
+
+
+
+<!-- ==========================================================
+     ================= SECTION : POURQUOI ? ===================
+     ========================================================== -->
 <section class="bg-[#8E1616] py-12 sm:py-16 md:py-24">
   <div class="max-w-6xl mx-auto flex flex-col sm:flex-col md:flex-row items-center md:items-start gap-6 sm:gap-8 md:gap-12 px-4 sm:px-6 md:px-10">
 
@@ -243,20 +169,23 @@
       </h1>
 
      <p class="font-lato font-medium text-[24px] sm:text-[18px] md:text-[24px] text-[#EEF2D5] mt-2 sm:mt-4 md:mt-6" style="line-height:50px; letter-spacing:1%;">
-  Parce qu'apprendre, collaborer et s'organiser ne devraient pas être compliqués. ESPRITHUB réunit tous vos outils dans un seul espace moderne et intuitif : cours, salles, agenda, actualités… tout est à portée de clic.
+  Parce qu’apprendre, collaborer et s’organiser ne devraient pas être compliqués. ESPRITHUB réunit tous vos outils dans un seul espace moderne et intuitif : cours, salles, agenda, actualités… tout est à portée de clic.
 </p>
 
     </div>
 
     <!-- Image à droite -->
     <div class="flex-1">
-      <img src="../assets/home/pq.png" alt="Pourquoi EspritHub" class="w-full h-auto object-cover">
+      <img src="../pq.png" alt="Pourquoi EspritHub" class="w-full h-auto object-cover">
     </div>
 
   </div>
 </section>
 
-<!-- ========================= FOOTER ========================= -->
+
+<!-- ==========================================================
+       ========================= FOOTER =========================
+       ========================================================== -->
 <footer class="bg-[#F8EEDF] text-black flex flex-col min-h-[300px]">
 
   <!-- Contenu principal du footer -->
@@ -269,11 +198,11 @@
       </h2>
       <div class="flex flex-col gap-4">
         <div class="flex items-center gap-3">
-          <img src="../assets/home/tel.png" alt="Téléphone" class="w-6 h-6">
+          <img src="../tel.png" alt="Téléphone" class="w-6 h-6">
           <span class="font-outfit font-regular text-[18px]">+216 70 685 685</span>
         </div>
         <div class="flex items-center gap-3">
-          <img src="../assets/home/msg.png" alt="Email" class="w-6 h-6">
+          <img src="../msg.png" alt="Email" class="w-6 h-6">
           <span class="font-outfit font-regular text-[18px]">contact@esprithub.tn</span>
         </div>
       </div>
@@ -286,8 +215,8 @@
       </h2>
       <ul class="flex flex-col gap-3 text-left">
         <li class="font-outfit font-regular text-[18px] hover:underline cursor-pointer">Cours</li>
-        <li><a href="historiquesalles.html" class="font-outfit font-regular text-[18px] hover:underline cursor-pointer">Salles</a></li>
-        <li><a href="semaineBlancheActivee.html" class="font-outfit font-regular text-[18px] hover:underline cursor-pointer">Agenda</a></li>
+        <li class="font-outfit font-regular text-[18px] hover:underline cursor-pointer">Salles</li>
+        <li class="font-outfit font-regular text-[18px] hover:underline cursor-pointer">Agenda</li>
       </ul>
     </div>
 
@@ -299,7 +228,7 @@
       <form class="flex flex-col sm:flex-row gap-3 justify-center">
         <input type="email" placeholder="Votre email..."
                class="flex-1 px-4 py-3 rounded-lg text-black placeholder-black bg-[#E8C999] focus:outline-none" />
-        <button type="button" onclick="location.href='historiquesalles.html'" class="px-6 py-3 bg-[#8E1616] text-white rounded-[83px] font-outfit font-regular">
+        <button type="submit" class="px-6 py-3 bg-[#8E1616] text-white rounded-[83px] font-outfit font-regular">
           SUBMIT
         </button>
       </form>
@@ -312,6 +241,9 @@
     ESPRITHUB © 2025 — TOUS DROITS RÉSERVÉS
   </p>
 </footer>
+
+
+
 
 </body>
 </html>

@@ -68,11 +68,11 @@ body {
 }
 
 .bgpage {
-  /* Le chemin correct est simplement le nom du fichier car il est dans le même dossier (src/) */
-  background-image: url('bg.png'); 
+  background-image: url('./bg.png'); /* bg.png dans le même dossier que index.html */
   background-size: cover;
   background-position: center;
 }
+
 /* Overlay dégradé vers la couleur crème */
 .bgpage::after {
   content: "";
@@ -89,3 +89,239 @@ body {
   background-color: #8E1616;
 }
 
+/* Styles pour l'agenda - Palette de couleurs */
+.bg-blue-400 {
+  background-color: #3B82F6; /* Blue from palette */
+}
+
+.bg-green-500 {
+  background-color: #22C55E; /* Green from palette */
+}
+
+.bg-purple-500 {
+  background-color: #9333EA; /* Purple from palette */
+}
+
+.bg-orange-500 {
+  background-color: #FB923C; /* Orange from palette */
+}
+
+.bg-pink-400 {
+  background-color: #C084FC; /* Pink/Purple from palette */
+}
+
+/* Couleurs supplémentaires de la palette */
+.bg-purple-600 {
+  background-color: #A855F7; /* Medium Purple from palette */
+}
+
+.bg-green-400 {
+  background-color: #4ADE80; /* Light Green from palette */
+}
+
+.bg-blue-500 {
+  background-color: #60A5FA; /* Light Blue from palette */
+}
+
+.bg-gray-50 {
+  background-color: #f9fafb;
+}
+
+.bg-gray-100 {
+  background-color: #f3f4f6;
+}
+
+.border-gray-200 {
+  border-color: #e5e7eb;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+.border-l-4 {
+  border-left-width: 4px;
+}
+
+.border-green-500 {
+  border-color: #22C55E; /* Green from palette */
+}
+
+.border-blue-400 {
+  border-color: #3B82F6; /* Blue from palette */
+}
+
+.border-orange-500 {
+  border-color: #FB923C; /* Orange from palette */
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.space-y-3 > * + * {
+  margin-top: 0.75rem;
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+.space-y-6 > * + * {
+  margin-top: 1.5rem;
+}
+
+/* Styles pour la section "À ne pas rater" */
+.border-white\/20 {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.border-white\/40 {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.hover\:border-white\/40:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.text-gray-300 {
+  color: #d1d5db;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* Styles pour les cercles de progression */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.bottom-8 {
+  bottom: 2rem;
+}
+
+.right-8 {
+  right: 2rem;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour les rectangles transparents avec fond blanc - selon Figma */
+.bg-white\/10 {
+  background-color: rgba(255, 255, 255, 0.1); /* 10% pour les cartes de progression */
+}
+
+.bg-white\/16 {
+  background-color: rgba(255, 255, 255, 0.16); /* 16% comme dans Figma */
+}
+
+.bg-white\/50 {
+  background-color: rgba(255, 255, 255, 0.5); /* 50% pour les cellules du calendrier */
+}
+
+.bg-white\/20 {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bg-white\/30 {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bg-white\/20 {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bg-white\/30 {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.border-white\/20 {
+  border-color: rgba(255, 255, 255, 0.2); /* 20% pour les cellules du calendrier */
+}
+
+.border-white\/30 {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Bordure gris clair E5E7EB comme dans Figma */
+.border-gray-200 {
+  border-color: #E5E7EB;
+}
+
+.hover\:bg-white\/30:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.hover\:bg-white\/10:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.text-gray-200 {
+  color: #e5e7eb;
+}
+
+/* Styles spécifiques selon Figma */
+.rounded-\[16px\] {
+  border-radius: 16px; /* Corner radius 16 pour le calendrier */
+}
+
+.rounded-\[12px\] {
+  border-radius: 12px; /* Corner radius 12 pour les cartes */
+}
+
+.rounded-\[8px\] {
+  border-radius: 8px; /* Corner radius 8 pour les cellules */
+}
+
+.rounded-\[0px\] {
+  border-radius: 0px; /* Corner radius 0 pour les boutons */
+}
+
+/* Drop shadows pour le calendrier */
+.shadow-calendar {
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Spacing spécifiques */
+.gap-\[25px\] {
+  gap: 25px; /* Spacing 25 pour "À ne pas rater" */
+}
+
+.gap-\[16px\] {
+  gap: 16px; /* Spacing 16 pour "Aujourd'hui" */
+}
