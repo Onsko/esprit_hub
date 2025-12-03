@@ -1,0 +1,91 @@
+@import "tailwindcss";
+/* Importe toutes les classes utilitaires de Tailwind 4 automatiquement.
+   Ce fichier sera ensuite compilé vers `output.css` ou `style.css` final. */
+
+/* ------------------------------------------
+   Variables globales (couleurs + polices)
+------------------------------------------ */
+@layer base {
+  /* @layer base → permet d’ajouter tes propres styles dans la couche "base" de Tailwind.
+     Cela évite les conflits et permet l’override propre. */
+
+  :root {
+    /* :root = niveau global → variables CSS utilisables dans tout le projet. */
+
+    --font-heading: "Playfair Display", serif;
+    /* Police spéciale pour les titres (h1, h2, h3).
+       Tu l'utiliseras via la classe .font-heading */
+
+    --font-body: "Inter", sans-serif;
+    /* Police du texte normal (paragraphes, labels). */
+
+    --color-primary: #8B0000; /* Rouge foncé esprit hub */
+    /* Couleur principale : boutons, footer, titres importants */
+
+    --color-accent: #E8C8AE;  
+    /* Couleur d’accent : section "Pourquoi EspritHub" */
+
+    --color-cream: #F8EEDF;   
+    /* Couleur beige crémeuse : background général */
+
+    --color-dark: #5C0900;
+    /* Rouge sombre → hover, textes importants */
+
+    --color-card-bg: #F4D9C3;
+    /* BG des cartes "Par où commencer ?" */
+
+      --color-esprithub: #8E1616;
+
+  }
+}
+
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+
+body {
+  font-family: var(--font-body);
+  /* Applique la police globale Inter à toute la page */
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+  /* Classe Tailwind custom → applique Playfair Display aux titres */
+}
+
+
+
+/* Overlay rouge */
+.header-overlay {
+  background: linear-gradient(180deg, rgba(26, 4, 4, 0.75), rgba(0,0,0,0.4));
+  /* Dégradé noir transparent (75% → 40%)
+     Sert à assombrir le header pour rendre le texte lisible. */
+}
+
+.bgpage {
+  /* Le chemin correct est simplement le nom du fichier car il est dans le même dossier (src/) */
+  background-image: url('bg.png'); 
+  background-size: cover;
+  background-position: center;
+}
+/* Overlay dégradé vers la couleur crème */
+.bgpage::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* couvre tout le header */
+  background: linear-gradient(to bottom, rgba(248, 238, 223, 0) 80%, var(--color-cream) 97%);
+  /* Dégradé très léger : transparent jusqu’à 90%, crème seulement dans les 10% bas */
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+body {
+  background-color: #8E1616;
+}
+
